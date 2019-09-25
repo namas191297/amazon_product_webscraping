@@ -32,15 +32,15 @@ As mentioned above, the main idea of the program is based on web-scraping. To cr
 
 1. In this case, we must see how the URL is structured whenever we search for a product in the amazon search-box. We will use this URL to extract data:
 
-![URL-Format](images/search_url.png)
+![URL-Format](Images/search_url.png)
 
 2. After we know the URL which displays the products, we must find out the element used to display the product prices. The product prices are displayed as follows on the amazon website:
 
-![Price-Display](images/listed_prices.png)
+![Price-Display](Images/listed_prices.png)
 
 3. Now we know how prices are listed on the website. Now we must inspect the HTML to figure out what element is used for this particular price. We will need the tag name and the class name for that element to extract the prices. The HTML tag can be seen as: 
 
-![Inspected-Element](images/inspected_element.png)
+![Inspected-Element](Images/inspected_element.png)
 
 4. Our spider crawls through this URL and extracts the prices using the tag and class name specified, displaying the result.
 
@@ -48,7 +48,7 @@ As mentioned above, the main idea of the program is based on web-scraping. To cr
 
 After all the prices have been fetched, the program displays the mean value of all the prices, giving us the average price for our desired product:
 
-![Average-Price-Result](images/result.png)
+![Average-Price-Result](Images/result.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
